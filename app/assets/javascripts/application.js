@@ -15,3 +15,13 @@
 //= require lodash
 //= require angular
 //= require restangular
+
+var app = angular.module('myapp', ['restangular']);
+app.controller('person_edit_controller', function($scope, Restangular){
+  $scope.person = Restangular.one('people', 1).get().$object;
+  $scope.save = function(person){
+    person.name = "Hard coded";
+    person.hobby_ids = [1,2,3];
+    person.save();
+  };
+});

@@ -5,4 +5,7 @@ class PeopleController < ApplicationController
   def show
     render json: Person.find(params[:id])
   end
+  def update
+    binding.pry #check params here
+  end
 end
