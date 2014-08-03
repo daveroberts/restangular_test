@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get this up and running:
 
-Things you may want to cover:
+* Clone the repo
 
-* Ruby version
+* Run bundle
 
-* System dependencies
+* bundle exec rake db:migrate
 
-* Configuration
+* bundle exec rake db:seed
 
-* Database creation
+* rails s
 
-* Database initialization
+* Navigate to localhost:3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Edit the form, hit save, observer the network traffic sent
